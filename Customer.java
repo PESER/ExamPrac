@@ -1,12 +1,12 @@
 
-public class Customer {
+public class Customer extends BankAccount {
 
 	private String forename;
 	private String surname;
 	private String dob;
 	
 	public Customer(String forename, String surname, String dob) {
-		super();
+		super(balance, owner, type);
 		this.forename = forename;
 		this.surname = surname;
 		this.dob = dob;
@@ -31,7 +31,6 @@ public class Customer {
 		this.dob = dob;
 	}
 
-	@Override
 	public String toString() {
 		String Person = "Person [forename=" + forename + ", surname=" + surname + ", dob=" + dob + "]";
 		return Person;
