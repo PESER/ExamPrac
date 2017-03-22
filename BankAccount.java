@@ -1,4 +1,5 @@
 
+
 public abstract class BankAccount {
 
 	public static int nextAccNum = 12345678;
@@ -41,7 +42,6 @@ public abstract class BankAccount {
 		this.balance += amount;
 	}
 
-	@Override
 	public String toString() {
 		 String oString = "BankAccount [balance=" + balance + ", accountNumber=" + accountNumber + "]";
 		return oString;
